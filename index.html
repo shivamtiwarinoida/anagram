@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 1.2rem;
+            background-image:linear-gradient(orange,purple) ;
+            background-attachment: fixed;
+        }
+
+        .head{
+            color:white;
+            background-color: rgb(0, 4, 255);
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            border-radius: 0.4rem;
+            padding: 0.2rem;
+        }
+
+        .head:hover{
+            background-color: rgb(102, 102, 253);
+            color: blue;
+            cursor: pointer;
+            border-color: blue;
+        }
+        
+        .navbar{
+            color: whitesmoke;
+            background-color:rgb(55, 0, 255);
+            border-radius: 0.4rem;
+            display: flex;
+            justify-content:space-between;
+            flex-flow: row wrap;
+            margin-bottom: 2rem;
+            padding: 0.3rem;
+        }
+
+        .n1{
+            border:2x solid red ;
+            margin:0.4rem;
+        }
+
+        .n1:hover{
+            color:black;
+            cursor: pointer;
+        }
+
+        .sec{
+            display: flex;
+            
+            margin:1rem;
+        }
+
+        .s1{
+            border: 0.3rem solid rgb(253, 17, 1);
+            border-radius: 0.4rem;
+            color: brown;
+            background-color: rgb(252, 199, 101);
+            padding:0.4rem;
+            margin-left:0.4rem;
+            margin-right:0.4rem;
+            text-align: center;
+            box-shadow: 0.5rem 0.5rem 1rem aqua;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .s1:hover{
+            background-color: rgb(255, 138, 118);
+            color: blue;
+            border-color: blueviolet;
+            cursor: pointer;
+        }
+
+        .s2{
+            border: 0.3rem solid green;
+            border-radius: 0.4rem;
+            color: rgb(2, 155, 2);
+            background-color: rgb(85, 255, 85);
+            padding:0.4rem;
+            margin-left:0.4rem;
+            margin-right:0.4rem;
+            box-shadow: 0.5rem 0.5rem 1.4rem rgb(249, 250, 246);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .s2:hover{
+            color:rgb(165, 60, 60);
+            background-color: rgb(255, 208, 121);
+            border-color: rgb(150, 23, 0);
+            cursor: pointer;
+        }
+
+        .sec2{
+            color: blue;
+            border: 0.3rem solid purple;
+            border-radius:0.5rem;
+            background-color: aquamarine;
+            width: 80%;
+            margin:1rem auto;
+            padding: 0.5rem;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .l1{
+            width: 80%;
+            margin: 0.3rem;
+        }
+
+        .h3{
+            color: black;
+            text-shadow: 0.5rem 0.5rem 1rem red;
+        }
+        .foot{
+            color:blue;
+            background-color: rgb(255, 198, 76);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: right;
+            font-size: 1.3rem;
+            border: 0.2rem solid rgb(168, 48, 0);
+            border-radius: 0.4rem;
+            padding:0.4rem;
+            margin-top:1rem;    
+        }
+
+        .foot:hover{
+            border: blue;
+            background-color: aqua;
+            color:brown;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="head"><h1>Anagram</h1></header>
+    <nav class="navbar">
+        <div class="n1">Searching</div>
+        <div class="n1">Sorting</div>
+        <div class="n1">Examples</div>
+        <div class="n1">Algorithms</div>
+    </nav>
+    <section class="sec">
+        <div class="s1">
+            <h2>Anagram</h2>
+            <p>
+                Two word are said to be anagram of each other if they have same set of
+                character in them ...or we can say they are made up of same word justi
+                by rearanging the character only.For example,rat and art made of same 
+                character just differ in arrangement..other examples are raaz and azra.
+            </p>
+        </div>
+        <div class="s2">
+            <h2>Logic</h2>
+            <p>
+                To check two string are anagram of each other or not you have to make
+                two array containing corresponding frequencies of each character this 
+                can be done by iterating each string for each character and noting fre
+                quencies of each charcter .Then we have to compare two array if they are 
+                eqaul then they are anagram of each other else,Not. 
+            </p>
+        </div>
+    </section>
+    <section class="sec2">
+        <h3 class="h3">Algorithm</h3>
+        <ul>
+            <li class="l1">Make two array of 26 length</li>
+            <li class="l1">Choose character a to z</li>
+            <li class="l1">Iterate for each character in string 1</li>
+            <li class="l1">Iterate for each character in string 2</li>
+            <li class="l1">Count frequency of each character</li>
+            <li class="l1"> Assign it to both array</li>
+            <li class="l1">Compare eac element of array</li>
+            <li class="l1">If both array are same</li>
+            <li class="l1">then anagram else not</li>
+        </ul>
+    </section>
+    <footer class="foot">
+        <div>by Shivam Tiwari(shivamtiwarinoida22sec@gmail.com)</div>
+    </footer>
+</body>
+</html>
